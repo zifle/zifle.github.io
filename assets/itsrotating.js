@@ -14,7 +14,7 @@ function serapls(e) {
 
     if (alpha > 20 || alpha < -20) {
         // Don't start before the device is rotated some, to prevent regular shakiness from triggering it
-        rotater.style['transform'] = 'rotate('+alpha+'deg)';
+        rotater.style['transform'] = 'rotate('+~alpha+'deg)';
     } else {
         rotater.style['transform'] = '';
     }
